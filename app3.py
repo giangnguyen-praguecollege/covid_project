@@ -11,7 +11,7 @@ from dash.dependencies import Input, Output
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(server=app.serve)
 
 DATASET = r'/home/h31bnj24/3/97/data1.csv'
 df1 = pd.read_csv(DATASET)
