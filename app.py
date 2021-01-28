@@ -14,7 +14,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
-DATASET = r'/home/h31bnj24/3/97/data1.csv'
+DATASET = r'/data1.csv'
 df1 = pd.read_csv(DATASET)
 print(df1.head(4))  # I get first 4 entries in the dataframe
 print(df1.tail(4))  # I get last 4 entries in the dataframe
