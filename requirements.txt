@@ -5,3 +5,4 @@ dash
 pandas
 plotly
 numpy
+pycountry
